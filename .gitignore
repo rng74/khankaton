@@ -1,0 +1,13 @@
+# IDEA
+.idea
+
+# Gradle
+.gradle
+build
+gradle.properties
+
+# Generated directories
+generated
+
+# Generated proto descriptors
+*.pb
