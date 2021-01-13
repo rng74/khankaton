@@ -1,0 +1,6 @@
+# This file is used to specify owners for each subdirectory/subproject in the repo.
+#
+# Detailed information about CODEOWNERS syntax can be found at
+# https://docs.github.com/github/creating-cloning-and-archiving-repositories/about-code-owners
+
+* @dev-bwayne
