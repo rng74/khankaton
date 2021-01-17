@@ -34,4 +34,7 @@ task unpackFiles(type: Copy) {
     into "${projectDir}/src/main/resources"
 }
 
-run.dependsOn(unpackFiles)
+run {
+    dependsOn(unpackFiles)
+    mustRunAfter(unpackFiles)
+}
