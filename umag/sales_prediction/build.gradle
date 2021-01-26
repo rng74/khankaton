@@ -21,6 +21,7 @@ dependencies {
     implementation "com.google.guava:guava:30.1-jre"
     implementation "com.google.inject:guice:4.2.3:no_aop"
     implementation "net.israfil.cli:jcommander-guice:0.1"
+    implementation 'de.bwaldvogel:liblinear:2.42'
 
     runtimeOnly "com.google.flogger:flogger-system-backend:${floggerVersion}"
 }

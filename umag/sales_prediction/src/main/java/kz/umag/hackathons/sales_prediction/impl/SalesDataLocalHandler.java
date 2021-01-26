@@ -16,7 +16,7 @@ import java.util.Scanner;
 /**
  * Implementation of {@link SalesDataHandler} that uses local database.
  */
-class SalesDataLocalHandler implements SalesDataHandler {
+public class SalesDataLocalHandler implements SalesDataHandler {
 
   private final ImmutableMap<Long, ImmutableMap<
       Long, ImmutableSortedMap<LocalDate, Integer>>> salesData;
