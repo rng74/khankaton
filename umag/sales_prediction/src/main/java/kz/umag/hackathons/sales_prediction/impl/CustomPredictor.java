@@ -31,11 +31,11 @@ class CustomPredictor implements SalesPredictor {
         double[] magicCoefficients = {0.34, 0.16, 0.12, 0.09, 0.062, 0.05, 0.02, 0.02, 0.01}; // 0.375
 
         long curWeek = DEFAULT_VAL;
-        for (int i = 0, j = 0; j < magicCoefficients.length; i++) {
+        for (int i = 1, j = 0; j < magicCoefficients.length; i++) {
             curWeek += salesDataHandler
                     .getSales(storeId, productBarcode, curDate.minusDays(i))
                     .orElse(DEFAULT_VAL);
-            if ((i + 1) % PREDICTION_WINDOW == 0) {
+            if (i % PREDICTION_WINDOW == 0) {
                 result += (magicCoefficients[j] * curWeek);
                 j++;
                 curWeek = DEFAULT_VAL;
